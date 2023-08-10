@@ -14,6 +14,7 @@
               </div>           
               <div class="card-body">
 <form action="{{route('companies.store')}}" method="POST">
+  @csrf 
                 <div class="row">
                   <div class="col-md-12">
                   <div class="col-md-12">
@@ -38,7 +39,7 @@
                     <div class="form-group row">
                       <label for="email" class="col-md-3 col-form-label">Email</label>
                       <div class="col-md-9">
-                        <input type="text" name="email"  id="email" class="form-control is-invalid">
+                      <input type="text" name="email"  id="email" class="form-control is-invalid">
                         
                       </div>
                     </div>
